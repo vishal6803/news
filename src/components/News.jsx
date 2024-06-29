@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Newsitem from "./Newsitem";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import { async } from "hbs/lib/async";
 import Spiner from "./Spiner";
 function News(props) {
   const { country, category, apiKey, pageSize } = props;
