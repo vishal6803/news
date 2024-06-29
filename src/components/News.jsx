@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Newsitem from "./Newsitem";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import async from "hbs/lib/async";
+import { async } from "hbs/lib/async";
 import Spiner from "./Spiner";
 function News(props) {
   const { country, category, apiKey, pageSize } = props;
@@ -13,7 +13,6 @@ function News(props) {
   const [totalResults, setTotalresults] = useState(0);
 
   useEffect(() => {
-
     setPage(page + 1);
     updateNews();
     document.title = `${category}- NewsApp`;

@@ -10,4 +10,9 @@ export default defineConfig({
   },
   //code to solve the error that process is not defined when try to use the .env filr's variables
   define: { "process.env": process.env },
+  build: {
+    rollupOptions: {
+      external: ["hbs"],
+    },
+  },
 });
